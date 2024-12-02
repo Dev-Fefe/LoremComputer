@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Article;
+use App\Models\Blogs;
 use Illuminate\Http\Request;
 
-class ArticleController extends Controller
+class BlogsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $articles = Article::all();
-        return view('article.index', compact('articles'));
+        //
     }
 
     /**
@@ -21,7 +20,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('article.create');
+        //
     }
 
     /**
@@ -35,7 +34,7 @@ class ArticleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Article $article)
+    public function show(Blogs $blogs)
     {
         //
     }
@@ -43,15 +42,15 @@ class ArticleController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Article $article)
+    public function edit(Blogs $blogs)
     {
-        return view('article.edit', compact('article'));
+        //
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Article $article)
+    public function update(Request $request, Blogs $blogs)
     {
         //
     }
@@ -59,7 +58,7 @@ class ArticleController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Article $article)
+    public function destroy(Blogs $blogs)
     {
         //
     }
